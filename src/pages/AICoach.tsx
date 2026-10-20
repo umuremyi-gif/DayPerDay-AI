@@ -150,7 +150,7 @@ export default function AICoach() {
       } else {
         const errorMsg: Message = {
           role: 'assistant',
-          content: 'The AI service is currently unavailable. Please make sure the Python backend and Ollama are running.',
+          content: 'The AI service is currently unavailable. Please make sure the Python backend and Dr. Green AI are running.',
           timestamp: new Date().toISOString(),
         };
         setMessages((prev) => [...prev, errorMsg]);
@@ -186,7 +186,7 @@ export default function AICoach() {
             <div>
               <h2 className="font-display text-lg font-bold text-slate-900 dark:text-white">AI Coach</h2>
               <p className="text-sm text-slate-500 dark:text-slate-400">
-                Model: {preferences?.ollama_model || 'qwen2.5:3b'}
+                Model: {preferences?.ollama_model || 'Dr. Green AI: Version 1'}
               </p>
             </div>
           </div>
@@ -218,12 +218,12 @@ export default function AICoach() {
           <div className="mt-4 p-4 rounded-xl bg-warning-50 dark:bg-warning-950/20 border border-warning-200 dark:border-warning-800">
             <p className="text-sm text-warning-700 dark:text-warning-400 font-medium mb-2">AI Service is Offline</p>
             <p className="text-xs text-slate-600 dark:text-slate-400">
-              To use the AI Coach, start the Python backend and Ollama:
+              To use the AI Coach, start the Python backend and Dr. Green AI:
             </p>
             <ol className="mt-2 space-y-1 text-xs text-slate-600 dark:text-slate-400 list-decimal list-inside">
-              <li>Install Ollama: <code className="px-1 py-0.5 rounded bg-slate-200 dark:bg-slate-800">ollama pull qwen2.5:3b</code></li>
+              <li>Install Dr. Green AI: <code className="px-1 py-0.5 rounded bg-slate-200 dark:bg-slate-800">Dr. Green AI</code></li>
               <li>Start backend: <code className="px-1 py-0.5 rounded bg-slate-200 dark:bg-slate-800">cd backend && python -m uvicorn main:app --reload --port 8000</code></li>
-              <li>Ensure Ollama is running: <code className="px-1 py-0.5 rounded bg-slate-200 dark:bg-slate-800">ollama serve</code></li>
+              <li>Ensure Dr. Green AI is running: <code className="px-1 py-0.5 rounded bg-slate-200 dark:bg-slate-800">Dr. Green AI serve</code></li>
             </ol>
           </div>
         )}
@@ -237,7 +237,7 @@ export default function AICoach() {
               <div className="w-16 h-16 rounded-2xl bg-primary-50 dark:bg-primary-950/30 flex items-center justify-center mb-4">
                 <Sparkles size={28} className="text-primary-500" />
               </div>
-              <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Ask your AI Coach anything</h3>
+              <h3 className="font-semibold text-slate-900 dark:text-white mb-2">How can help you to day?</h3>
               <p className="text-sm text-slate-500 dark:text-slate-400 max-w-md mb-6">
                 Get personalized insights on your productivity, finances, goals, and daily habits. Write in any language — the AI responds in your language.
               </p>

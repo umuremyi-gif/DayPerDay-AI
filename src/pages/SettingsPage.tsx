@@ -331,12 +331,12 @@ export default function SettingsPage() {
           </div>
           <div>
             <h3 className="font-semibold text-slate-900 dark:text-white">AI Configuration</h3>
-            <p className="text-xs text-slate-400">Ollama local AI settings</p>
+            <p className="text-xs text-slate-400">Dr. Green local AI settings</p>
           </div>
         </div>
         <div className="grid sm:grid-cols-2 gap-4">
           <div>
-            <label className="label">Ollama Endpoint</label>
+            <label className="label">Dr. Green AI Endpoint</label>
             <input
               value={prefForm.ollama_endpoint || 'http://localhost:11434'}
               onChange={(e) => setPrefForm((prev) => ({ ...prev, ollama_endpoint: e.target.value }))}
@@ -345,12 +345,12 @@ export default function SettingsPage() {
             />
           </div>
           <div>
-            <label className="label">Ollama Model</label>
+            <label className="label">Dr. Green AI Model</label>
             <input
-              value={prefForm.ollama_model || 'qwen2.5:3b'}
+              value={prefForm.ollama_model || 'Dr. Green AI: Version 1'}
               onChange={(e) => setPrefForm((prev) => ({ ...prev, ollama_model: e.target.value }))}
               className="input"
-              placeholder="qwen2.5:3b"
+              placeholder="Dr. Green AI"
             />
           </div>
         </div>
@@ -375,9 +375,9 @@ export default function SettingsPage() {
             <div className="mt-3 text-xs text-slate-500 dark:text-slate-400">
               <p className="font-medium mb-1">Setup instructions:</p>
               <ol className="list-decimal list-inside space-y-1">
-                <li>Install Ollama from <a href="https://ollama.com" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline">ollama.com</a></li>
-                <li>Run: <code className="px-1 py-0.5 rounded bg-slate-200 dark:bg-slate-700">ollama pull qwen2.5:3b</code></li>
-                <li>Start: <code className="px-1 py-0.5 rounded bg-slate-200 dark:bg-slate-700">ollama serve</code></li>
+                <li>Install Dr. Green AI from <a href="https://ollama.com" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline">drgreenai.com</a></li>
+                <li>Run: <code className="px-1 py-0.5 rounded bg-slate-200 dark:bg-slate-700">Green pull Dr. Green AI</code></li>
+                <li>Start: <code className="px-1 py-0.5 rounded bg-slate-200 dark:bg-slate-700">Green serve</code></li>
                 <li>Start Python backend (see README)</li>
               </ol>
             </div>

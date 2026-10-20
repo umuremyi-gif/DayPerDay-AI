@@ -15,7 +15,7 @@ export default function LandingPage() {
     { icon: Target, title: '90-Day Goals', desc: 'Break ambitious goals into monthly milestones, weekly objectives, and daily actions with AI assistance.' },
     { icon: Wallet, title: 'Financial Tracking', desc: 'Record income, expenses, transfers, and savings. Get accurate reports — no invented numbers, ever.' },
     { icon: TrendingUp, title: 'Reports & Analytics', desc: 'Daily, weekly, monthly, and quarterly reports with charts showing your real progress over time.' },
-    { icon: Brain, title: 'AI Coach', desc: 'Powered by local Ollama AI. Get personalized insights on productivity, finances, and goal progress.' },
+    { icon: Brain, title: 'AI Coach', desc: 'Powered by local Dr. Green AI. Get personalized insights on productivity, finances, and goal progress.' },
     { icon: Trophy, title: 'Achievements', desc: 'Earn gold, silver, and bronze trophies for consistent planning, reviews, savings, and goal completion.' },
     { icon: Bell, title: 'Smart Reminders', desc: 'Configurable notifications for planning, reviews, and reports — aligned to your timezone.' },
   ];
