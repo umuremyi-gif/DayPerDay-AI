@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DayPerDay AI
 
 AI-powered daily planning, goal tracking, and financial management application for individuals and businesses.
@@ -216,3 +217,6 @@ project/
 └── README.md
 ```
 "# DayPerDay-AI" 
+=======
+# DayPerDay-AI
+>>>>>>> 8bc7ddd9d75481c4fff22b40785bd9403fd7fcb5
