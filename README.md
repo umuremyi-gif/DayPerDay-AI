@@ -215,3 +215,4 @@ project/
 ├── .env                    # Frontend environment (Supabase + API URL)
 └── README.md
 ```
+"# DayPerDay-AI" 
